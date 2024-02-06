@@ -1,11 +1,12 @@
 import React from 'react';
+import './NavBar.css'; 
 
 function NavBar(){
 
     return (
         <nav className='navbar'>
-            <a href='https://www.connect13.co/' className='logo'>Connect<strong>13</strong>
-                <img src="//www.connect13.co/wp-content/uploads/2020/02/connect_logo_W_sm.png" alt='Connect13'/>
+            <a href='https://www.connect13.co/' className='logo'>
+                <img src="https://i.postimg.cc/wMCF4fZ4/Connect13-Logo.png" alt='Connect13'/>
             </a>
         </nav>
     )
