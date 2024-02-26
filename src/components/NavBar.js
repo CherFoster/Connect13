@@ -14,7 +14,7 @@ function NavBar(){
           <a href='https://www.connect13.co/' className='logo'>
             <img src="https://i.postimg.cc/wMCF4fZ4/Connect13-Logo.png" alt='Connect13'/>
           </a>
-          <button className="hamburger" onClick={toggleNav} aria-label="Toggle navigation">
+          <button className="hamburger" onClick={toggleNav}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>

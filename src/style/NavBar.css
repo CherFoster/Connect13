@@ -25,9 +25,9 @@
     z-index: 1001;
   }
   
-  .menu-items.open {
+  /* .menu-items.open {
     display: flex;
-  }
+  } */
   
   .hamburger {
     display: none;
@@ -46,14 +46,15 @@
   
   @media (max-width: 768px) {
     .menu-items {
-      position: absolute;
-      right: 0;
-      top: 60px;
+      position: absolute; /* Changed from absolute to fixed for full screen overlay */
+      top: 0; /* Adjusted to top for full height */
+      right: 0; 
+      width: 95%; 
       flex-direction: column;
       background-color: #1c192d;
-      width: 100%;
+      padding-top: 60px; 
       display: none;
-      z-index: 1001
+      z-index: 1001; 
     }
   
     .menu-items.open {
@@ -62,5 +63,7 @@
   
     .hamburger {
       display: flex;
+      z-index: 1002; /* Above the menu */
     }
   }
+  

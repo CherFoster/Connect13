@@ -21,7 +21,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-80%, -50%); /* Adjusted for better centering */
+  transform: translate(-80%, -50%);
   color: white;
 }
 
