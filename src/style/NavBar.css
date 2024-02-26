@@ -6,12 +6,14 @@
     font-family: 'Archivo', sans-serif;
 }
 
-nav {
+.navbar {
     background: #1c192d;
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* Ensure navbar is positioned for z-index to take effect */
+    z-index: 1000;
   }
   
   .menu-items {
@@ -20,6 +22,7 @@ nav {
     float: right;
     padding: 20px;
     grid-template-columns: repeat(5, auto);
+    z-index: 1001;
   }
   
   .menu-items.open {
@@ -48,6 +51,7 @@ nav {
       background-color: #1c192d;
       width: 100%;
       display: none;
+      z-index: 1001
     }
   
     .menu-items.open {
