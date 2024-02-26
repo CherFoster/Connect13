@@ -2,7 +2,7 @@
 
 .banner-container {
     position: relative;
-    text-align: center; /* Center text horizontally */
+    text-align: center; 
   }
 
   /* .image-container {
@@ -24,6 +24,5 @@
   }
   
   .text-content h1 {
-    margin: 0; /* Remove default margin of h1 */
-
+    margin: 0; 
   }

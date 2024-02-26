@@ -1,17 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
-/* nav {
-    background: #1c192d;
-    padding-top: 10px;
-
-} */
-
-/* .menu-items {
-    float: right;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    gap: 20px;
-} */
 
 .navbar a {
     color: #e8341f;
@@ -32,7 +19,6 @@ nav {
     gap: 20px;
     float: right;
     padding: 20px;
-    /* display: grid; */
     grid-template-columns: repeat(5, auto);
   }
   
