@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
-nav {
+/* nav {
     background: #1c192d;
     padding-top: 10px;
 
-}
+} */
 
-.menu-items {
+/* .menu-items {
     float: right;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(5, auto);
     gap: 20px;
-}
+} */
 
 .navbar a {
     color: #e8341f;
@@ -19,3 +19,56 @@ nav {
     font-family: 'Archivo', sans-serif;
 }
 
+nav {
+    background: #1c192d;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-items {
+    display: flex;
+    gap: 20px;
+    float: right;
+    padding: 20px;
+    /* display: grid; */
+    grid-template-columns: repeat(5, auto);
+  }
+  
+  .menu-items.open {
+    display: flex;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #e8341f;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-items {
+      position: absolute;
+      right: 0;
+      top: 60px;
+      flex-direction: column;
+      background-color: #1c192d;
+      width: 100%;
+      display: none;
+    }
+  
+    .menu-items.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }

@@ -11,19 +11,23 @@ function NavBar(){
 
     return (
         <nav className='navbar'>
-            <a href='https://www.connect13.co/' className='logo'>
-                <img src="https://i.postimg.cc/wMCF4fZ4/Connect13-Logo.png" alt='Connect13'/>
-            </a>
-            <div className='menu-items'>
-                <Link to='/'>HOME</Link>
-                <Link to='/services'>SERVICES</Link>
-                <Link to='/about'>ABOUT</Link>
-                <Link to='/team'>OUR TEAM</Link>
-                <Link to='/contact'>CONTACT</Link>
-            </div>
-            
+          <a href='https://www.connect13.co/' className='logo'>
+            <img src="https://i.postimg.cc/wMCF4fZ4/Connect13-Logo.png" alt='Connect13'/>
+          </a>
+          <button className="hamburger" onClick={toggleNav} aria-label="Toggle navigation">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
+          <div className={`menu-items ${openNav ? 'open' : ''}`}>
+            <Link to='/' onClick={toggleNav}>HOME</Link>
+            <Link to='/services' onClick={toggleNav}>SERVICES</Link>
+            <Link to='/about' onClick={toggleNav}>ABOUT</Link>
+            <Link to='/team' onClick={toggleNav}>OUR TEAM</Link>
+            <Link to='/contact' onClick={toggleNav}>CONTACT</Link>
+          </div>
         </nav>
-    )
-}
-
-export default NavBar;
+      );
+    }
+    
+    export default NavBar;
