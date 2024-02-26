@@ -33,7 +33,9 @@
     display: none;
     flex-direction: column;
     gap: 5px;
+    height: 30px;;
     cursor: pointer;
+    background-color: #48474d;
   }
   
   .hamburger .bar {
