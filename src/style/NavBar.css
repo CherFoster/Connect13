@@ -46,8 +46,8 @@
   
   @media (max-width: 768px) {
     .menu-items {
-      position: absolute; /* Changed from absolute to fixed for full screen overlay */
-      top: 0; /* Adjusted to top for full height */
+      position: absolute;
+      top: 0; 
       right: 0; 
       width: 95%; 
       flex-direction: column;
