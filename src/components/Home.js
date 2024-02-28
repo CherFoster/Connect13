@@ -12,12 +12,12 @@ function Home(){
         {
             title: "Operational Alignment",
             text: "Connect13 provides that external perspective that can rapidly help clients understand issues that are often 'too close' to be seen clearly from within the organization.",
-            copy: "We assist clients in thoroughly examining their operational challenges, aligning systems, business processes, organizational structures, and incentive plans, all while ensuring measurability in terms of process metrics and outcomes directly tied to company strategy. This approach fosters an environment where employees focus their efforts on achieving measurable, desired results, reducing waste, and enhancing satisfaction. As efficiencies improve, operational income increases, embodying Connect13's commitment to delivering tangible returns on investment.",
+            copy: "We help clients analyze and align their operations, systems, processes, structures, and incentives, ensuring everything is measurable and aligned with their strategy. This method promotes a focus on measurable results, reduces waste, and increases satisfaction, leading to improved efficiencies and operational income. Connect13 is dedicated to delivering tangible ROI.",
         },
         {
             title: "Market Advisory",
             text: "We believe the core value of Connect13 is our Market Network, and our ability to make meaningful connections.",
-            copy: "Connect13 prioritizes the value of relationships over commissions, focusing on meaningful connections rather than acting as an external sales force. Our engagement model eschews traditional sales commissions in favor of a Market Advisory relationship. This entails a monthly consulting and advising service on the Colorado market, leveraging our extensive Market Network. The aim is to provide measurable outcomes, including strategic market analysis and introductions to key contacts. These connections often lead to significant opportunities, transcending mere sales to foster valuable, lasting relationships. At Connect13, making impactful connections is our core mission, unmatched in Colorado.",
+            copy: "Connect13 values relationships over commissions, focusing on impactful connections instead of sales. We offer a Market Advisory service, providing monthly consulting on the Colorado market through our extensive network. Our goal is to deliver measurable results, including market analysis and introductions to key contacts, fostering opportunities and lasting relationships. Making meaningful connections is at the heart of our mission, setting us apart in Colorado.",
         },
         {
             title: "Funding Advisory",
@@ -31,7 +31,7 @@ function Home(){
         <>
         <div className="home-container">
             <h1 className="home-heading">Strategic Business Solutions</h1>
-            <p className="home-body">Connect13 is a boutique management consulting firm that delivers highly tangible benefits to clients through the most effective Market Network in Colorado. We provide a range of focused advisory services including strategy creation, operational alignment, market penetration, and access to capital investment sources. We provide these services to companies ranging from startups seeking their first rounds of funding to mature, established organizations looking at major transformation.</p>
+            <p className="home-body">Connect13 is a boutique management consulting firm in Colorado, offering a suite of advisory services such as strategy creation, operational alignment, market penetration, and capital investment access. Catering to both startups seeking initial funding and established organizations undergoing significant transformations, we deliver tangible benefits through our effective Market Network.</p>
             <p className="home-body"><strong>Every Connect13 engagement is designed to not only deliver measurable business impact but to do so in combination with actionable coaching and mentoring to help companies take their executive teams to the next level.</strong></p>
         </div>
         <div className="page-content">
