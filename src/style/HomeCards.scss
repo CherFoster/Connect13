@@ -20,10 +20,10 @@ $bp-lg: 800px;
 //   height: 100%;
 // }
 
-body {
-  display: grid;
-  place-items: center;
-}
+// body {
+//   display: grid;
+//   place-items: center;
+// }
 
 .page-content {
   display: grid;
@@ -113,7 +113,7 @@ body {
     $i: index($imageIds, $id);
     
     &:nth-child(#{$i}):before {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1046%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1047%26quot%3b)'%3e%3c/rect%3e%3cpath d='M118 1000L1118 0L1907 0L907 1000z' fill='url(%26quot%3b%23SvgjsLinearGradient1048%26quot%3b)'%3e%3c/path%3e%3cpath d='M1346 1000L346 0L-1025 0L-25 1000z' fill='url(%26quot%3b%23SvgjsLinearGradient1049%26quot%3b)'%3e%3c/path%3e%3cpath d='M663.8942375129574 1000L1440 223.89423751295737L1440 1000z' fill='url(%26quot%3b%23SvgjsLinearGradient1048%26quot%3b)'%3e%3c/path%3e%3cpath d='M0 1000L776.1057624870426 1000L 0 223.89423751295737z' fill='url(%26quot%3b%23SvgjsLinearGradient1049%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1046'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='7.64%25' y1='-11%25' x2='92.36%25' y2='111%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1047'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1048'%3e%3cstop stop-color='rgba(76%2c 66%2c 125%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(76%2c 66%2c 125%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1049'%3e%3cstop stop-color='rgba(76%2c 66%2c 125%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(76%2c 66%2c 125%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1314%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='url(%26quot%3b%23SvgjsRadialGradient1315%26quot%3b)'%3e%3c/rect%3e%3cpath d='M118 1000L1118 0L1907 0L907 1000z' fill='url(%26quot%3b%23SvgjsLinearGradient1316%26quot%3b)'%3e%3c/path%3e%3cpath d='M1346 1000L346 0L-1025 0L-25 1000z' fill='url(%26quot%3b%23SvgjsLinearGradient1317%26quot%3b)'%3e%3c/path%3e%3cpath d='M663.8942375129574 1000L1440 223.89423751295737L1440 1000z' fill='url(%26quot%3b%23SvgjsLinearGradient1316%26quot%3b)'%3e%3c/path%3e%3cpath d='M0 1000L776.1057624870426 1000L 0 223.89423751295737z' fill='url(%26quot%3b%23SvgjsLinearGradient1317%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1314'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='50%25' cy='0%25' r='1232.23' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient1315'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(43%2c 38%2c 73%2c 1)' offset='1'%3e%3c/stop%3e%3c/radialGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1316'%3e%3cstop stop-color='rgba(28%2c 25%2c 45%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(28%2c 25%2c 45%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1317'%3e%3cstop stop-color='rgba(28%2c 25%2c 45%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(28%2c 25%2c 45%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
     }
   }
 }
@@ -124,8 +124,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  justify-content: flex-end; // Ensure content is aligned to the bottom of the card.
-
+  justify-content: flex-end;
   padding: 1rem;
   transition: transform var(--d) var(--e);
   z-index: 1;
@@ -136,14 +135,14 @@ body {
 }
 
 .title {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.2;
   color: whitesmoke;
 }
 
 .text {
-  opacity: 1; // Ensure text is visible by default
+  opacity: 1;
   transition: opacity var(--d) var(--e), transform var(--d) var(--e); 
 }
 
