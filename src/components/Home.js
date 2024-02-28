@@ -1,5 +1,6 @@
 import React from "react";
 import HomeCards from "./HomeCards";
+import '../style/Home.css'; 
 
 function Home(){
     const cards = [
@@ -27,18 +28,19 @@ function Home(){
     ];
 
     return(
+        <>
         <div className="home-container">
             <h1 className="home-heading">Strategic Business Solutions</h1>
             <p className="home-body">Connect13 is a boutique management consulting firm that delivers highly tangible benefits to clients through the most effective Market Network in Colorado. We provide a range of focused advisory services including strategy creation, operational alignment, market penetration, and access to capital investment sources. We provide these services to companies ranging from startups seeking their first rounds of funding to mature, established organizations looking at major transformation.</p>
             <p className="home-body"><strong>Every Connect13 engagement is designed to not only deliver measurable business impact but to do so in combination with actionable coaching and mentoring to help companies take their executive teams to the next level.</strong></p>
-
-            <div className="page-content">
-                {cards.map((card, index) => (
-                    <HomeCards key={index} title={card.title} text={card.text} copy={card.copy} />
-                ))}
-
-            </div>
         </div>
+        <div className="page-content">
+        {cards.map((card, index) => (
+            <HomeCards key={index} title={card.title} text={card.text} copy={card.copy} />
+        ))}
+
+    </div>
+    </>
     )
 }
 

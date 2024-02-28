@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.home-heading {
+    color: #e8341f;
+    font-size: 2.5rem;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    margin-left: 100px;
+}
+.home-body {
+    font-family: 'Archivo', sans-serif;
+    display: block;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
