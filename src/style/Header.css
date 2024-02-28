@@ -28,10 +28,10 @@
 .text-content h1 {
   margin: 0;
   font-family: "Rajdhani", sans-serif;
-  font-size: 4rem; /* Start with a scalable unit */
+  font-size: 4rem; 
   font-weight: 300;
   font-style: normal;
-  padding: 0 20px; /* Adds padding to prevent text touching the edges */
+  padding: 0 20px; 
   box-sizing: border-box;
 }
 

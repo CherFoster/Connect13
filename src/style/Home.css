@@ -1,16 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.home-container {
+    display: flex;
+    flex-direction: row; /* Adjusted for side-by-side layout */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Space between the heading and the text wrapper */
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 .home-heading {
+    flex: 1; /* Allow heading to take up space flexibly */
     color: #e8341f;
-    font-size: 2.5rem;
-    font-family: 'Archivo', sans-serif;
-    text-align: center;
-    margin-left: 100px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 420;
+    margin-right: 20px; /* Space between heading and text */
 }
+
+.home-text-wrapper {
+    flex: 3; /* Allows the text wrapper to take up more space than the heading */
+    display: flex;
+    flex-direction: column;
+}
+
 .home-body {
-    font-family: 'Archivo', sans-serif;
-    display: block;
-    text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify; /* Adjust if you want the text to be justified or right-aligned */
+    margin-bottom: 10px; /* Space between paragraphs */
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center align the stacked elements */
+    }
+    
+    .home-heading, .home-text-wrapper {
+        text-align: center; /* Center text for smaller screens */
+        flex: unset; /* Remove flex grow settings */
+        width: 100%; /* Full width for better readability on smaller screens */
+    }
+    
+    .home-heading {
+        margin-bottom: 20px; /* Space between heading and text on small screens */
+    }
 }

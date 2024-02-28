@@ -27,21 +27,22 @@ function Home(){
 
     ];
 
-    return(
+    return (
         <>
-        <div className="home-container">
+          <div className="home-container">
             <h1 className="home-heading">Strategic Business Solutions</h1>
-            <p className="home-body">Connect13 is a boutique management consulting firm in Colorado, offering a suite of advisory services such as strategy creation, operational alignment, market penetration, and capital investment access. Catering to both startups seeking initial funding and established organizations undergoing significant transformations, we deliver tangible benefits through our effective Market Network.</p>
-            <p className="home-body"><strong>Every Connect13 engagement is designed to not only deliver measurable business impact but to do so in combination with actionable coaching and mentoring to help companies take their executive teams to the next level.</strong></p>
-        </div>
-        <div className="page-content">
-        {cards.map((card, index) => (
-            <HomeCards key={index} title={card.title} text={card.text} copy={card.copy} />
-        ))}
-
-    </div>
-    </>
-    )
+            <div className="home-text-wrapper">
+              <p className="home-body">Connect13 is a boutique management consulting firm in Colorado, offering a suite of advisory services such as strategy creation, operational alignment, market penetration, and capital investment access. Catering to both startups seeking initial funding and established organizations undergoing significant transformations, we deliver tangible benefits through our effective Market Network.</p>
+              <p className="home-body"><strong>Every Connect13 engagement is designed to not only deliver measurable business impact but to do so in combination with actionable coaching and mentoring to help companies take their executive teams to the next level.</strong></p>
+            </div>
+          </div>
+          <div className="page-content">
+            {cards.map((card, index) => (
+              <HomeCards key={index} title={card.title} text={card.text} copy={card.copy} />
+            ))}
+          </div>
+        </>
+      )
 }
 
 export default Home;
