@@ -11,7 +11,7 @@ function Home(){
         },
         {
             title: "Operational Alignment",
-            text: "Connect13 provides that external perspective that can rapidly help clients understand issues that are often 'too close' to be seen clearly from within the organization.",
+            text: "Connect13 offers an external perspective to quickly clarify issues that organizations may be too close to see.",
             copy: "We help clients analyze and align their operations, systems, processes, structures, and incentives, ensuring everything is measurable and aligned with their strategy. This method promotes a focus on measurable results, reduces waste, and increases satisfaction, leading to improved efficiencies and operational income. Connect13 is dedicated to delivering tangible ROI.",
         },
         {

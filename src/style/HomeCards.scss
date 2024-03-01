@@ -16,15 +16,6 @@ $bp-lg: 800px;
   box-sizing: border-box;
 }
 
-// html, body {
-//   height: 100%;
-// }
-
-// body {
-//   display: grid;
-//   place-items: center;
-// }
-
 .page-content {
   display: grid;
   grid-gap: 1rem;
@@ -41,9 +32,6 @@ $bp-lg: 800px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
-
-
 .card {  
   position: relative;
   display: flex;
@@ -53,12 +41,14 @@ $bp-lg: 800px;
   width: 100%;
   text-align: center;
   color: whitesmoke;
-  background-color: whitesmoke;
+  // background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
     0 2px 2px rgba(0,0,0,0.1), 
     0 4px 4px rgba(0,0,0,0.1), 
     0 8px 8px rgba(0,0,0,0.1),
     0 16px 16px rgba(0,0,0,0.1);
+
+    
   
   @media (min-width: $bp-md) {
     height: 350px;
@@ -77,37 +67,37 @@ $bp-lg: 800px;
     pointer-events: none;
   }
   
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    pointer-events: none;
-    background-image: linear-gradient(
-      to bottom,
-      hsla(0, 0%, 0%, 0) 0%,
-      hsla(0, 0%, 0%, 0.009) 11.7%,
-      hsla(0, 0%, 0%, 0.034) 22.1%,
-      hsla(0, 0%, 0%, 0.072) 31.2%,
-      hsla(0, 0%, 0%, 0.123) 39.4%,
-      hsla(0, 0%, 0%, 0.182) 46.6%,
-      hsla(0, 0%, 0%, 0.249) 53.1%,
-      hsla(0, 0%, 0%, 0.320) 58.9%,
-      hsla(0, 0%, 0%, 0.394) 64.3%,
-      hsla(0, 0%, 0%, 0.468) 69.3%,
-      hsla(0, 0%, 0%, 0.540) 74.1%,
-      hsla(0, 0%, 0%, 0.607) 78.8%,
-      hsla(0, 0%, 0%, 0.668) 83.6%,
-      hsla(0, 0%, 0%, 0.721) 88.7%,
-      hsla(0, 0%, 0%, 0.762) 94.1%,
-      hsla(0, 0%, 0%, 0.790) 100%
-    );
-    transform: translateY(-50%);
-    transition: transform calc(var(--d) * 2) var(--e);
-  }
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 200%;
+  //   pointer-events: none;
+  //   background-image: linear-gradient(
+  //     to bottom,
+  //     hsla(0, 0%, 0%, 0) 0%,
+  //     hsla(0, 0%, 0%, 0.009) 11.7%,
+  //     hsla(0, 0%, 0%, 0.034) 22.1%,
+  //     hsla(0, 0%, 0%, 0.072) 31.2%,
+  //     hsla(0, 0%, 0%, 0.123) 39.4%,
+  //     hsla(0, 0%, 0%, 0.182) 46.6%,
+  //     hsla(0, 0%, 0%, 0.249) 53.1%,
+  //     hsla(0, 0%, 0%, 0.320) 58.9%,
+  //     hsla(0, 0%, 0%, 0.394) 64.3%,
+  //     hsla(0, 0%, 0%, 0.468) 69.3%,
+  //     hsla(0, 0%, 0%, 0.540) 74.1%,
+  //     hsla(0, 0%, 0%, 0.607) 78.8%,
+  //     hsla(0, 0%, 0%, 0.668) 83.6%,
+  //     hsla(0, 0%, 0%, 0.721) 88.7%,
+  //     hsla(0, 0%, 0%, 0.762) 94.1%,
+  //     hsla(0, 0%, 0%, 0.790) 100%
+  //   );
+  //   transform: translateY(-50%);
+  //   transition: transform calc(var(--d) * 2) var(--e);
+  // }
   
   @each $id in $imageIds {
     $i: index($imageIds, $id);
@@ -142,14 +132,17 @@ $bp-lg: 800px;
 }
 
 .text {
+  display: block;
   opacity: 1;
-  transition: opacity var(--d) var(--e), transform var(--d) var(--e); 
+  // transition: opacity var(--d) var(--e), transform var(--d) var(--e); 
+  margin: 15px;
 }
 
 .copy {
   font-family: var(--font-serif);
   font-size: 1rem;
   line-height: 1.35;
+  margin-top: -130px;
 }
 
 .card:hover .title, .card:hover .text {
@@ -169,7 +162,7 @@ $bp-lg: 800px;
       transform: none; 
     }
     .title {
-      margin-bottom: 90px; 
+      margin-bottom: 10px; 
     }
     .title, .text {
       opacity: 1; 
@@ -201,7 +194,7 @@ $bp-lg: 800px;
   .content {
     transform: translateY(calc(100% - 20rem));
     
-    > *:not(.title) {
+    > *:not(.title, .text) {
       opacity: 0;
       transform: translateY(1rem);
       transition:
