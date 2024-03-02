@@ -9,7 +9,7 @@ $bp-lg: 800px;
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
   --font-sans: 'Rubik', sans-serif;
-  --font-serif: 'Cardo', serif;
+  --font-serif: 'Rubik', sans-serif;
 }
 
 * {
@@ -140,7 +140,7 @@ $bp-lg: 800px;
 
 .copy {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: .89rem;
   line-height: 1.35;
   margin-top: -130px;
 }
