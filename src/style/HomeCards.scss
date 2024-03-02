@@ -41,7 +41,6 @@ $bp-lg: 800px;
   width: 100%;
   text-align: center;
   color: whitesmoke;
-  // background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
     0 2px 2px rgba(0,0,0,0.1), 
     0 4px 4px rgba(0,0,0,0.1), 
@@ -49,9 +48,13 @@ $bp-lg: 800px;
     0 16px 16px rgba(0,0,0,0.1);
 
     
-  
   @media (min-width: $bp-md) {
     height: 350px;
+
+    // .copy {
+    //   font-size: .64rem;
+    //   margin-bottom: 180px;
+    // }
   }
   
   &:before {
@@ -109,7 +112,8 @@ $bp-lg: 800px;
 }
 
 .content {
-  position: relative;
+  overflow: hidden;
+  // position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,5 +232,28 @@ $bp-lg: 800px;
     .content > *:not(.title, .text) {
       transition-duration: 0s;
     }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .card {
+    min-width: 190px; /* Adjust minimum width to prevent cards from getting too skinny */
+  }
+
+  .card .copy {
+    font-size: 0.7rem; /* Keep font size small for space efficiency */
+    margin-bottom: 10rem; /* Adjust margin as needed */
+    padding: 10px; /* Adjust padding for spacing */
+    line-height: 1.2; 
+    hyphens: auto; 
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    padding-bottom: 0.5rem; /* Reduce bottom padding on the card */
+  }
+
+  .card .copy {
+    margin-bottom: 0.5rem; /* Reduce bottom margin on the copy to minimize the gap */
+    font-size: 0.8rem; /* Adjust font size if not already set */
   }
 }

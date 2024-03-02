@@ -7,7 +7,7 @@ function Home(){
         {
             title: "Strategy Creation",
             text: "Effective strategies are designed to evolve over time.",
-            copy: "Connect13 helps clients create a repeatable cycle of strategic planning.  Facilitated sessions are designed to meet organizations where they are at in their process, then refine that through practical techniques that tie into operational alignment.  The result is not just refined strategic direction, but a stronger leadership team and a sustainable approach to steering the organization.",
+            copy: "Connect13 assists clients in developing a strategic planning cycle through facilitated sessions tailored to their current process. These sessions use practical techniques for operational alignment, resulting in refined strategy, enhanced leadership, and a sustainable organizational direction.",
         },
         {
             title: "Operational Alignment",
@@ -17,7 +17,7 @@ function Home(){
         {
             title: "Market Advisory",
             text: "We believe the core value of Connect13 is our Market Network, and our ability to make meaningful connections.",
-            copy: "Connect13 values relationships over commissions, focusing on impactful connections instead of sales. We offer a Market Advisory service, providing monthly consulting on the Colorado market through our extensive network. Our goal is to deliver measurable results, including market analysis and introductions to key contacts, fostering opportunities and lasting relationships. Making meaningful connections is at the heart of our mission, setting us apart in Colorado.",
+            copy: "Connect13 prioritizes meaningful connections over commissions, offering Market Advisory services for insightful consulting on the Colorado market. By leveraging our vast network, we aim to deliver tangible outcomes, such as strategic market insights and valuable introductions, cultivating significant opportunities and enduring relationships. Our commitment to impactful connections distinguishes us in Colorado.",
         },
         {
             title: "Funding Advisory",
