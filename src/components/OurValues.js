@@ -1,6 +1,5 @@
 import React from "react";
 import '../style/OurValues.css'; 
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function OurValues() {
     return (

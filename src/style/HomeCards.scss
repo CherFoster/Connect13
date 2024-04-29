@@ -17,8 +17,12 @@ $bp-lg: 800px;
 }
 
 .page-content {
-  display: grid;
-  grid-gap: 1rem;
+  // display: grid;
+  // grid-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; 
   padding: 1rem;
   // max-width: 1024px;
   margin: 0 auto;
@@ -34,6 +38,9 @@ $bp-lg: 800px;
 }
 .card {  
   position: relative;
+  // min-width: 20em;
+  max-width: 25em;
+  flex: 1 0 auto;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -232,28 +239,5 @@ $bp-lg: 800px;
     .content > *:not(.title, .text) {
       transition-duration: 0s;
     }
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .card {
-    min-width: 190px; /* Adjust minimum width to prevent cards from getting too skinny */
-  }
-
-  .card .copy {
-    font-size: 0.7rem; /* Keep font size small for space efficiency */
-    margin-bottom: 10rem; /* Adjust margin as needed */
-    padding: 10px; /* Adjust padding for spacing */
-    line-height: 1.2; 
-    hyphens: auto; 
-  }
-}
-@media only screen and (max-width: 600px) {
-  .card {
-    padding-bottom: 0.5rem; /* Reduce bottom padding on the card */
-  }
-
-  .card .copy {
-    margin-bottom: 0.5rem; /* Reduce bottom margin on the copy to minimize the gap */
-    font-size: 0.8rem; /* Adjust font size if not already set */
   }
 }

@@ -1,60 +1,77 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+
 .container {
     max-width: 1140px; 
     margin: 0 auto;
     padding: 0 15px; 
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  .row {
+    font-family: 'Rubik', sans-serif;
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-  }
-  
-  .heading {
+}
+
+.heading {
     flex: 0 0 100%;
     max-width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     font-size: 20px;   
-  }
-  
-  .block {
-    flex: 0 0 33.333333%;
-    /* max-width: 33.333333%; */
-    padding-right: -5px;
-    padding-left: -5px;
-  }
-  
-  .hr {
+}
+
+.block {
+    flex: 0 0 calc(33.333333% - 20px);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    background: #fff; 
+    margin: 10px;
+}
+
+.block:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2); 
+}
+
+.block blockquote {
+    flex-grow: 1;
+    margin: 10px;
+    padding: 20px;
+    border-left: 5px solid #e8341f;
+}
+
+.hr {
     margin: 10px 0;
     background-color: #f2f1f7;
-    box-shadow: 
-    0 -1px 1px rgba(0,0,0,0.1), 
-    0 -2px 2px rgba(0,0,0,0.1), 
-    0 -4px 4px rgba(0,0,0,0.1), 
-    0 -8px 8px rgba(0,0,0,0.1),
-    0 -12px 12px rgba(0,0,0,0.1),
-    0 1px 1px rgba(0,0,0,0.1), 
-    0 2px 2px rgba(0,0,0,0.1), 
-    0 4px 4px rgba(0,0,0,0.1), 
-    0 8px 8px rgba(0,0,0,0.1),
-    0 12px 12px rgba(0,0,0,0.1);
-  }
-  
-  section {
-    margin: 100px 0;
-  }
-  
-  .heading h2 {
+    box-shadow: 0 -1px 1px rgba(0,0,0,0.1), 
+                0 -2px 2px rgba(0,0,0,0.1), 
+                0 -4px 4px rgba(0,0,0,0.1), 
+                0 -8px 8px rgba(0,0,0,0.1),
+                0 -12px 12px rgba(0,0,0,0.1),
+                0 1px 1px rgba(0,0,0,0.1), 
+                0 2px 2px rgba(0,0,0,0.1), 
+                0 4px 4px rgba(0,0,0,0.1), 
+                0 8px 8px rgba(0,0,0,0.1),
+                0 12px 12px rgba(0,0,0,0.1);
+}
+section {
+  margin: 100px 0;
+}
+
+.heading h2 {
     text-align: left;
     position: relative;
     margin-bottom: 40px;
-  }
-  
-  .heading h2:after {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.heading h2:after {
     margin-top: 20px;
     display: inline-block;
     content: '';
@@ -64,17 +81,10 @@
     position: absolute;
     bottom: -10px;
     left: 0;
-  }
-  
-  blockquote p {
-    background: white;
-    padding: 20px;
-    border-left: 5px solid #e8341f; 
-  }
-  
-  @media (max-width: 768px) {
-    .col-sm-4 {
-      flex: 0 0 100%;
-      max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .block {
+        flex: 0 0 100%;
     }
-  }
+}
